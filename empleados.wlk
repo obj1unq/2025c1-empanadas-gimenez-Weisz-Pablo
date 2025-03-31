@@ -43,11 +43,11 @@ object baigorria {
   var empanadasVendidas = 0
   var totalCobrado = 0
   var precioEmpanada = 15
-
-  method nuevoPrecioEmpanada(_nuevoPrecioEmpanada){
+  
+  method nuevoPrecioEmpanada(_nuevoPrecioEmpanada) {
     precioEmpanada = _nuevoPrecioEmpanada
   }
-
+  
   method cantidadDeEmpanadasVendidas(cantidad) {
     empanadasVendidas += cantidad
   }
