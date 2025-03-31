@@ -1,5 +1,5 @@
 object galvan {
-  var sueldo = 15
+  var sueldo = 15000
   var dinero = 0
   var deuda = 0
   
