@@ -49,7 +49,7 @@ object baigorria{
         return empanadasVendidas * 15
     }
     method cobrarSueldo() {        
-        totalCobrado = totalCobrado + (empanadasVendidas * 15)
+        totalCobrado = totalCobrado + self.sueldoDelMes()
         empanadasVendidas = 0        
     }
     method totalCobrado() {
