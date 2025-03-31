@@ -42,12 +42,17 @@ object galvan {
 object baigorria {
   var empanadasVendidas = 0
   var totalCobrado = 0
-  
+  var precioEmpanada = 15
+
+  method nuevoPrecioEmpanada(_nuevoPrecioEmpanada){
+    precioEmpanada = _nuevoPrecioEmpanada
+  }
+
   method cantidadDeEmpanadasVendidas(cantidad) {
     empanadasVendidas += cantidad
   }
   
-  method sueldoDelMes() = empanadasVendidas * 15
+  method sueldoDelMes() = empanadasVendidas * precioEmpanada
   
   method cobrarSueldo() {
     totalCobrado += self.sueldoDelMes()
