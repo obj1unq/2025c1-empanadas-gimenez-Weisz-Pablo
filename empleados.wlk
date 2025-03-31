@@ -7,7 +7,13 @@ object galvan{
         return sueldo
     }
     var dinero = 0
+    method dinero(){
+        return dinero
+    }
     var deuda = 0
+    method deuda(){
+        return deuda
+    }
     method cobrarSueldo(){
         if (deuda > 0){
             if(sueldo + dinero >= deuda){
@@ -35,16 +41,19 @@ object galvan{
 
 object baigorria{
     var empanadasVendidas = 0
-    var totalCobrado = 0  
-      method cantidadDeEmpanadasVendidas(cantidad){
+    var totalCobrado = 0 
+    method cantidadDeEmpanadasVendidas(cantidad){
         empanadasVendidas = empanadasVendidas + cantidad
     }    
     method sueldoDelMes() {
         return empanadasVendidas * 15
     }
     method cobrarSueldo() {        
-        totalCobrado = totalCobrado + sueldoDelMes()
+        totalCobrado = totalCobrado + (empanadasVendidas * 15)
         empanadasVendidas = 0        
+    }
+    method totalCobrado() {
+        return totalCobrado
     }
 }
 
